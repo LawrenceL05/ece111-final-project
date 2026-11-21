@@ -21,3 +21,7 @@ tmp/
 .DS_Store
 Thumbs.db
 # Evidence in evidence/ is intentional and remains trackable.
+
+# Local setup and simulation logs. Copy selected evidence into evidence/.
+handshake/sim/*-transcript.txt
+handshake/sim/setup-console.txt

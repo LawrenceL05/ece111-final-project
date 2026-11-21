@@ -4,7 +4,7 @@ Source: ECE111_Final_Project_Part1.pdf. References below are PDF page numbers. T
 
 ## Handshake synchronizer — pp. 18–22
 
-- [ ] Add the provided synchronizer and testbench files.
+- [x] Add the provided synchronizer and testbench files.
 - [ ] Implement sender_fsm: IDLE, REQ_ACK_PHASE1, REQ_ACK_PHASE2.
 - [ ] Implement receiver_fsm: ACK_REQ_PHASE1, ACK_REQ_PHASE2.
 - [ ] Connect handshake_synchronizer and the request/acknowledgment synchronizers.

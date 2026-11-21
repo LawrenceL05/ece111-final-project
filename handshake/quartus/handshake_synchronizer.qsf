@@ -1,0 +1,9 @@
+set_global_assignment -name FAMILY "Arria II GX"
+set_global_assignment -name DEVICE EP2AGX45DF29I5
+set_global_assignment -name TOP_LEVEL_ENTITY handshake_synchronizer
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/flipflop_synchronizer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/sender_fsm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/receiver_fsm.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/handshake_synchronizer.sv
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 2

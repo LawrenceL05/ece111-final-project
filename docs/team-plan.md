@@ -4,7 +4,8 @@ Fill in owners together before starting. The suggested split is a starting point
 
 | Task | Owner | Status | Evidence / PR |
 |---|---|---|---|
-| Import official templates and testbenches | Unassigned | Not started | |
+| Import handshake templates and testbench | Setup | Complete | See starter-manifest.json |
+| Import SHA templates and testbench | Unassigned | Not started | |
 | Sender FSM and receiver FSM | Unassigned | Not started | |
 | Handshake integration and waveform verification | Unassigned | Not started | |
 | SHA schedule and compression datapath | Unassigned | Not started | |

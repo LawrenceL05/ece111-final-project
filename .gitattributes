@@ -8,3 +8,7 @@
 *.png binary
 *.pdf binary
 *.xlsx binary
+
+# Preserve the official starter bytes, including original line endings.
+handshake/rtl/*.sv -text
+handshake/tb/handshake_synchronizer_testbench.sv -text

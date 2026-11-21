@@ -1,0 +1,31 @@
+{
+  "archive": "ECE111_Final_Project_Part1.zip",
+  "archive_sha256": "10352bd87e1635e176de155c022800783dd94a24054c11ee3ef283445b25da7c",
+  "files": [
+    {
+      "path": "handshake/rtl/sender_fsm.sv",
+      "archive_member": "Final Project Part 1/handshake_synchronizer/sender_fsm.sv",
+      "sha256": "503acffb94c8b6272835b286396b337c2198c9786d0c38894af52f0321b5cbde"
+    },
+    {
+      "path": "handshake/tb/handshake_synchronizer_testbench.sv",
+      "archive_member": "Final Project Part 1/handshake_synchronizer/handshake_synchronizer_testbench.sv",
+      "sha256": "8577ff711f6cd67326de0582a9dbeddde0c76bd3d12a000220a980239972b1f4"
+    },
+    {
+      "path": "handshake/rtl/flipflop_synchronizer.sv",
+      "archive_member": "Final Project Part 1/handshake_synchronizer/flipflop_synchronizer.sv",
+      "sha256": "901799793f61af97c5e25f20d9332345bd5136f6018312eb09d6148a16fc7d28"
+    },
+    {
+      "path": "handshake/rtl/handshake_synchronizer.sv",
+      "archive_member": "Final Project Part 1/handshake_synchronizer/handshake_synchronizer.sv",
+      "sha256": "cac2a2d0220b4ce9adeaec9957c21b9884976d9c3b4c4a07f393dbcc8fb9761b"
+    },
+    {
+      "path": "handshake/rtl/receiver_fsm.sv",
+      "archive_member": "Final Project Part 1/handshake_synchronizer/receiver_fsm.sv",
+      "sha256": "7e647ccbc51edf8bcf007b6e451d910a74c1b61b2043957fe631519ee6b8f13c"
+    }
+  ]
+}

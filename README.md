@@ -1,6 +1,6 @@
 # ECE111 Final Project
 
-Shared workspace for the Fall 2026 final project. Status: repository setup only. Add the supplied starter code and testbenches before implementation.
+Shared workspace for the Fall 2026 final project. The official handshake starter files, Quartus project, and ModelSim scripts are ready. Implementation TODOs remain. SHA starter import is still pending.
 
 ## Project scope
 
@@ -15,7 +15,7 @@ Each design has `rtl/`, `tb/`, `sim/`, and `quartus/` folders. Put portable Mode
 
 ## Working together
 
-1. Clone this repository and add the official templates and testbenches from Canvas.
+1. Clone this repository. Follow [handshake setup](handshake/README.md) for Part I's first subpart.
 2. Claim a task in [the team plan](docs/team-plan.md).
 3. Create a branch, for example `feature/sender-fsm` or `feature/sha256-round`.
 4. Commit a focused change and open a pull request. Include the test performed and its result.
@@ -27,7 +27,7 @@ Keep the provided baseline testbenches unchanged. Put additional tests in separa
 
 Use Quartus and ModelSim. The handout specifies Arria II GX EP2AGX45DF29I5 and Slow 900mV 100C timing for the SHA core. See [requirements](docs/requirements.md) for the different handshake and SHA constraints.
 
-No simulations, synthesis runs, or implementations are included yet. Do not treat the empty folders as completed modules.
+The handshake setup compiles and runs for a bounded 10 us, with expected missing-port warnings from the unfinished template. This is not a functional pass. See [setup validation](docs/setup-validation.md). SHA folders remain empty.
 
 ## Source
 
