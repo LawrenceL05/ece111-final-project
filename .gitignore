@@ -1,0 +1,23 @@
+# Quartus generated work
+**/db/
+**/incremental_db/
+**/output_files/
+*.qws
+*.qdf
+*.qip~
+*.bak
+# ModelSim generated work
+**/work/
+**/modelsim.ini
+**/transcript
+*.wlf
+*.vcd
+*.vstf
+*.mpf
+# Local scratch and exports
+build/
+tmp/
+*.zip
+.DS_Store
+Thumbs.db
+# Evidence in evidence/ is intentional and remains trackable.
