@@ -1,6 +1,6 @@
 # ECE111 Final Project
 
-Shared workspace for the Fall 2026 final project. The official handshake starter files, Quartus project, and ModelSim scripts are ready. Implementation TODOs remain. SHA starter import is still pending.
+Shared workspace for the Fall 2026 final project. The official handshake and SHA starter files are ready. The handshake also has a Quartus project and ModelSim scripts. Implementation TODOs remain.
 
 ## Project scope
 
@@ -27,7 +27,7 @@ Keep the provided baseline testbenches unchanged. Put additional tests in separa
 
 Use Quartus and ModelSim. The handout specifies Arria II GX EP2AGX45DF29I5 and Slow 900mV 100C timing for the SHA core. See [requirements](docs/requirements.md) for the different handshake and SHA constraints.
 
-The handshake setup compiles and runs for a bounded 10 us, with expected missing-port warnings from the unfinished template. This is not a functional pass. See [setup validation](docs/setup-validation.md). SHA folders remain empty.
+The handshake setup compiles and runs for a bounded 10 us, with expected missing-port warnings from the unfinished template. This is not a functional pass. See [setup validation](docs/setup-validation.md). The [SHA starter files](sha256/README.md) match the official archive. The SHA template contains incomplete expressions and needs implementation before compilation.
 
 ## Source
 

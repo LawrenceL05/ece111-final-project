@@ -12,3 +12,6 @@
 # Preserve the official starter bytes, including original line endings.
 handshake/rtl/*.sv -text
 handshake/tb/handshake_synchronizer_testbench.sv -text
+
+sha256/rtl/simplified_sha256.sv -text
+sha256/tb/tb_simplified_sha256.sv -text

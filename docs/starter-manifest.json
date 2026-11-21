@@ -26,6 +26,31 @@
       "path": "handshake/rtl/receiver_fsm.sv",
       "archive_member": "Final Project Part 1/handshake_synchronizer/receiver_fsm.sv",
       "sha256": "7e647ccbc51edf8bcf007b6e451d910a74c1b61b2043957fe631519ee6b8f13c"
+    },
+    {
+      "path": "sha256/rtl/simplified_sha256.sv",
+      "archive_member": "Final Project Part 1/simplified_sha256/simplified_sha256.sv",
+      "sha256": "bac92f932a7b52d0af42fc2235791e8ca3749ac23614d6164a9c50175c746fdf"
+    },
+    {
+      "path": "sha256/tb/tb_simplified_sha256.sv",
+      "archive_member": "Final Project Part 1/simplified_sha256/tb_simplified_sha256.sv",
+      "sha256": "0ec4d9fff3e7f3b3088686ee38919aec347ce488ebbd7f311496606f4289cb51"
+    },
+    {
+      "path": "sha256/reference/finalsummary.xlsx",
+      "archive_member": "Final Project Part 1/simplified_sha256/finalsummary.xlsx",
+      "sha256": "8f88ea6c426b9988c2e0c1910ee710e914c9ad8eb18692b371ec4822c7186992"
+    },
+    {
+      "path": "sha256/reference/simplified_sha256_w_values.xlsx",
+      "archive_member": "Final Project Part 1/simplified_sha256/simplified_sha256_w_values.xlsx",
+      "sha256": "fcc42dc422fd6ebfeb4619b4f609767e5200addb85e8b08fa810cc771fe868d0"
+    },
+    {
+      "path": "sha256/reference/simplified_sha256.xlsx",
+      "archive_member": "Final Project Part 1/simplified_sha256/simplified_sha256.xlsx",
+      "sha256": "5cb927aa630f140c376bd2ca615aeacec56a07e7790b7d2081d31a69164b4daa"
     }
   ]
 }
