@@ -29,20 +29,18 @@ always_ff@(posedge dest_clk, posedge dest_reset) begin
      // Wait for req_iuest data coming from tx_fsm until then do not
      // enable loading of data in the data register
      ACK_REQ_PHASE1: begin
-
-
-        // Student to add code here
-
-
+        ack_o <= 1'b0;
+        data_in_en <= 1'b0;
+        if (req_i)
+           state <= ACK_REQ_PHASE2;
      end
      // In response to req_i=1 from tx_fsm, generate ack_o = 1 and enable
      // loading of data in destination register and then wait for req_i = 0
      ACK_REQ_PHASE2: begin
-
-
-        // Student to add code here
-
-
+        ack_o <= 1'b1;
+        data_in_en <= 1'b1;
+        if (!req_i)
+           state <= ACK_REQ_PHASE1;
      end
      // In Default state move to IDLE state    
      default: begin

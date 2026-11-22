@@ -15,7 +15,7 @@ module sender_fsm(
 // state encoding and state variable
 enum logic[1:0]{
   IDLE            = 2'b00, // IDLE FSM state to initialize outputs of FSM and wait for start == 1 
-  REQ_ACK_PHASE1  = 2'b01, // FSM state to assert req_o = 1, data_out_en = 1, ready = 1 and wait for ack_i == 1
+  REQ_ACK_PHASE1  = 2'b01, // FSM state to assert req_o = 1, data_out_en = 1, ready = 0 and wait for ack_i == 1
   REQ_ACK_PHASE2  = 2'b10  // FSM state to assert req_o = 0, data_out_en = 0, ready = 0 and wait for ack_i == 0
 } state;
 
@@ -34,9 +34,11 @@ always_ff@(posedge src_clk, posedge src_reset) begin
      // Initialize req_o, ready, data_out_en and state
      // Wait for start == 1 and then transition to req_ouest state
      IDLE: begin
-  
-        // Student to add code here
-
+        ready <= 1'b1;
+        req_o <= 1'b0;
+        data_out_en <= 1'b0;
+        if (start)
+           state <= REQ_ACK_PHASE1;
      end
      // Generate req_o = 1 to indicate handshake_rx_fsm that data is available
      // Generate data_out_en = 1 to data_out_en data buffer and send data to the receiver logic
@@ -44,20 +46,21 @@ always_ff@(posedge src_clk, posedge src_reset) begin
      // received by the receiver rx_fsm
      // Wait for assertion of ack_i from handshake_rx_fsm
      REQ_ACK_PHASE1: begin
-
-        // Student to add code here
-
-
+        ready <= 1'b0;
+        req_o <= 1'b1;
+        data_out_en <= 1'b1;
+        if (ack_i)
+           state <= REQ_ACK_PHASE2;
      end
      // De-assert buffer data_out_en to 0 to latch current data until it is received by the receiver
      // Continue to de-asserting of ready to 0 indicating no new data can be accepted by sender_fsm 
      // Wait for de-assertion of ack_i from handshake_rx_fsm
      REQ_ACK_PHASE2: begin
-
-
-        // Student to add code here
-
-
+        ready <= 1'b0;
+        req_o <= 1'b0;
+        data_out_en <= 1'b0;
+        if (!ack_i)
+           state <= IDLE;
      end
      // In Default state move to IDLE state    
      default: begin
