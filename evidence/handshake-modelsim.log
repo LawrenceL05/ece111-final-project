@@ -1,0 +1,15 @@
+# vsim -c -voptargs="+acc" -l C:/fpga-work/ece111-final-project/evidence/handshake-modelsim.log work.handshake_synchronizer_testbench -do "vcd file trace.vcd; vcd add -r /handshake_synchronizer_testbench/*; run 10 us; vcd flush; quit -f"
+# Start time: 11:40:39 on Nov 22,2026
+# Loading sv_std.std
+# Loading work.handshake_synchronizer_testbench
+# Loading work.handshake_synchronizer
+# Loading work.sender_fsm
+# Loading work.receiver_fsm
+# Loading work.flipflop_synchronizer
+# vcd file trace.vcd
+#  vcd add -r /handshake_synchronizer_testbench/*
+#  run 10 us
+#  vcd flush
+#  quit -f
+# End time: 11:40:40 on Nov 22,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
