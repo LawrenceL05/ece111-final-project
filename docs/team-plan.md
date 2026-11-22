@@ -7,7 +7,7 @@ Fill in owners together before starting. The suggested split is a starting point
 | Import handshake templates and testbench | Lawrence | Complete | See starter-manifest.json |
 | Import SHA templates and testbench | Lawrence | Complete | See starter-manifest.json and sha256/README.md |
 | Sender FSM and receiver FSM | Lawrence | Complete | Each FSM passed a standalone ModelSim test covering reset and two consecutive handshakes. |
-| Handshake integration and waveform verification | Unassigned | Complete | [ModelSim waveforms and report](../evidence/README.md) |
+| Handshake integration and waveform verification | Lawrence | Complete | [ModelSim waveforms and report](../evidence/README.md) |
 | SHA schedule and compression datapath | Unassigned | Not started | |
 | SHA controller, memory timing, and writes | Unassigned | Not started | |
 | Self-checking simulation and synthesis | Unassigned | Not started | |
