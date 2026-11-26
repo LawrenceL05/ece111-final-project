@@ -9,5 +9,5 @@ set_global_assignment -name NUM_PARALLEL_PROCESSORS 2
 # under Assignments > Settings > Compiler Settings > Advanced Settings (Synthesis).
 # Auto ROM Replacement is also off so the K constant table stays in logic.
 set_global_assignment -name AUTO_RAM_RECOGNITION OFF
-set_global_assignment -name AUTO_SHIFT_REG_RECOGNITION OFF
+set_global_assignment -name AUTO_SHIFT_REGISTER_RECOGNITION OFF
 set_global_assignment -name AUTO_ROM_RECOGNITION OFF
