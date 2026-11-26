@@ -25,3 +25,4 @@ Thumbs.db
 # Local setup and simulation logs. Copy selected evidence into evidence/.
 handshake/sim/*-transcript.txt
 handshake/sim/setup-console.txt
+sha256/sim/*-transcript.txt
