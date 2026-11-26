@@ -3,7 +3,7 @@
 // the message is read from the testbench memory starting at message_addr, and the
 // final 256 bit hash {H0..H7} is written back to memory starting at output_addr.
 //
-// the design follows the FSM flow chart from the project handout:
+// the design is an FSM with these states:
 //   IDLE -> READ -> BLOCK -> COMPUTE -> BLOCK -> ... -> WRITE -> IDLE
 //
 //   IDLE    : wait for start, load the initial hash values H0-H7
@@ -27,7 +27,7 @@ enum logic [2:0] {IDLE, READ, BLOCK, COMPUTE, WRITE} state;
 // local variables
 logic [31:0] message[NUM_OF_WORDS];     // the whole input message, filled in during READ
 logic [31:0] w[16];                     // message schedule window. only 16 W words are needed at
-                                        // any time (lecture 14), so w[0] is always the W[t] for the
+                                        // any time, so w[0] is always the W[t] for the
                                         // current round and the window shifts by one each round
 logic [31:0] wt;                        // the next W word (W[t+16]) made by word expansion
 logic [31:0] h0, h1, h2, h3, h4, h5, h6, h7;   // hash values H0-H7
@@ -76,7 +76,7 @@ endfunction
 
 
 // SHA256 hash round
-// one round of the compression function (lecture 14 / handout step 4).
+// one round of the SHA-256 compression function.
 // only A and E get brand new values, the other 6 words just shift over by one.
 // note: inside this function w and t are the function inputs (one word and the round number),
 // not the module's w window
@@ -96,7 +96,7 @@ endfunction
 
 
 // word expansion function
-// makes W[t+16] out of 4 older words (lecture 14 message expansion):
+// makes W[t+16] out of 4 older words (message expansion):
 //   W16 = W0 + sigma0(W1) + W9 + sigma1(W14)
 // the inputs are named by where they sit in the 16 word window
 function logic [31:0] word_expansion(input logic [31:0] w0, w1, w9, w14);
@@ -176,7 +176,7 @@ begin
     end
 
     // read all NUM_OF_WORDS message words from memory, one word every 2 clocks.
-    // the memory is synchronous (lecture 15): it registers mem_addr on a clock edge and only
+    // the memory is synchronous: it registers mem_addr on a clock edge and only
     // then puts that word on mem_read_data. the testbench memory updates mem_read_data on the
     // same edge our FSM samples it, so we hold each address for 2 clocks and only grab the data
     // on the 2nd edge. by then mem_read_data has already settled to the word we asked for, so

@@ -30,4 +30,4 @@ A pass prints `CONGRATULATIONS! All your hash results are correct!` and the tota
 
 ## Quartus
 
-Open `quartus/simplified_sha256.qpf`. The project targets Arria II GX EP2AGX45DF29I5 with top level `simplified_sha256`. Auto RAM, shift register, and ROM replacement are turned off in the `.qsf` so the fitter report shows 0 block memory bits and no inferred megafunctions (handout pp. 51–52). Read Fmax from the Slow 900mV 100C Model in the timing analyzer, and confirm `clk` is the only clock.
+Open `quartus/simplified_sha256.qpf`. The project targets Arria II GX EP2AGX45DF29I5 with top level `simplified_sha256`. Auto RAM, shift register, and ROM replacement are turned off in the `.qsf` so the fitter report shows 0 block memory bits and no inferred megafunctions. Read Fmax from the Slow 900mV 100C Model in the timing analyzer, and confirm `clk` is the only clock.
